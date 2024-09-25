@@ -65,7 +65,7 @@ const resetGame = () => {
 } 
  
 const cactusRun = () => { 
-    cactus.style.right = ${Number(cactus.style.right.split('px')[0]) + 8 + points * 0.05}px; 
+    cactus.style.right = `${Number(cactus.style.right.split('px')[0]) + 8 + points * 0.05}px`; 
     x = Math.floor(cactus.getBoundingClientRect().x + cactus.getBoundingClientRect().width / 2); 
     y = Math.floor(cactus.getBoundingClientRect().y + cactus.getBoundingClientRect().width / 2); 
      
@@ -134,7 +134,7 @@ butEl.addEventListener('click', () => {
     timer2 = setInterval(checkCollision, 100); 
     timer3 = setInterval(() => { 
         points += 1; 
-        pointsEl.innerHTML = ${points} points 
+        pointsEl.innerHTML = `${points} points`; 
     }, 50) 
 }) 
  
@@ -147,7 +147,7 @@ const startGame = (e) => {
     timer2 = setInterval(checkCollision, 100); 
     timer3 = setInterval(() => { 
         points += 1; 
-        pointsEl.innerHTML = ${points} points 
+        pointsEl.innerHTML = `${points} points` ;
     }, 50) 
          
         document.removeEventListener('keydown', startGame); 
