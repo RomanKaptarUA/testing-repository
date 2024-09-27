@@ -19,18 +19,26 @@ body, html {
 }
 
 .pool {
-    width: 80vw;
-    height: 80vh;
+    width: 720px;
+    height: 220px;
+    border-radius: 37px;
     background-color: lightgreen;
     position: relative;
     border: 2px solid black;
 }
 
+.card-seven__title{
+  margin-bottom: 20px;
+  font-family: 'Montserrat';
+font-weight: 400;
+font-size: 16px;
+color: #000;
+text-align: center;
+}
+
 .ball {
     width: 50px;
     height: 50px;
-    background-color: red;
-    border-radius: 50%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -46,9 +54,9 @@ body, html {
 
 
 
-.dino{   
-     padding-bottom: 36px;
-    width: 720px;  
+/* .dino{   
+     padding-bottom: 36px; */
+    /* width: 720px;  
       margin: 0 auto;
 }
 
@@ -121,4 +129,4 @@ body, html {
          position: absolute;
         bottom: 15px;       
          right: 0;
-    }
+    } */
