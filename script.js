@@ -162,3 +162,13 @@
 // Press 'w' to jump 
 // <br> 
 // Record ${localStorage.getItem('dinoRecord') === null ? 0 : localStorage.getItem('dinoRecord')}`
+
+function calc() {
+    var n1 = parseInt(document.getElementById('n1').value);
+    var n2 = parseInt(document.getElementById('n2').value);
+    var oper = document.getElementById('operators').value;
+
+    if (oper === '+'){
+        document.getElementById('result').value = n1 + n2; 
+    }
+}
