@@ -164,11 +164,16 @@
 // Record ${localStorage.getItem('dinoRecord') === null ? 0 : localStorage.getItem('dinoRecord')}`
 
 function calc() {
-    var n1 = parseInt(document.getElementById('n1').value);
-    var n2 = parseInt(document.getElementById('n2').value);
-    var oper = document.getElementById('operators').value;
-
-    if (oper === '+'){
-        document.getElementById('result').value = n1 + n2; 
-    }
+    let n1 = parseInt(document.getElementById('n1').value);
+    let n2 = parseInt(document.getElementById('n2').value);
+    let result = document.querySelector('.card-four__input');
+    
+    document.addEventListener('click', event => {
+       const plus = document.getElementById('+');
+       const minus = document.getElementById('-');
+       const molt = document.getElementById('*');
+       const divi = document.getElementById('/');
+    })
+    
+       
 }
