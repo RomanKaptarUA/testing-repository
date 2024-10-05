@@ -163,17 +163,44 @@
 // <br> 
 // Record ${localStorage.getItem('dinoRecord') === null ? 0 : localStorage.getItem('dinoRecord')}`
 
-function calc() {
-    let n1 = parseInt(document.getElementById('n1').value);
-    let n2 = parseInt(document.getElementById('n2').value);
-    let result = document.querySelector('.card-four__input');
+
+    // let n1 = parseInt(document.getElementById('n1').value);
+    // let n2 = parseInt(document.getElementById('n2').value);
     
-    document.addEventListener('click', event => {
-       const plus = document.getElementById('+');
-       const minus = document.getElementById('-');
-       const molt = document.getElementById('*');
-       const divi = document.getElementById('/');
-    })
-    
+    // const plus = document.getElementById('add');
+    //    const minus = document.getElementById('remove');
+    //    const molt = document.getElementById('moltiplicate');
+    //    const divi = document.getElementById('divis');
        
-}
+    
+    //    document.addEventListener('click', (event) => {
+    //     let result = document.querySelector('.card-four__input');
+    //     if (plus){
+    //         result.innerHTML = n1 + n2;
+    //     }
+    // })
+
+    const birthYearInput = document.getElementById("birthYear");
+    const checkButton = document.getElementById("checkButton");
+    const resultElement = document.getElementById("result");
+
+    
+    checkButton.addEventListener("click", function() {
+     
+        const year = parseInt(birthYearInput.value);
+
+    
+        let isLeapYear;
+        if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
+            isLeapYear = true;
+        } else {
+            isLeapYear = false;
+        }
+
+    
+        if (isLeapYear) {
+            resultElement.innerHTML = `Рік ${year} був високосним.`;
+        } else {
+            resultElement.innerHTML = `Рік ${year} не був високосним.`;
+        }
+    });

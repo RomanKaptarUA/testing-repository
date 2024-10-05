@@ -181,3 +181,20 @@ text-align: center;
       height: 35px;
       border-radius: 25px;
     }
+
+    .input{
+      background-color: rgb(182, 178, 178);
+      width: 160px;
+      height: 35px;
+      border: 2px solid black;
+      border-top-left-radius: 25px;
+      border-bottom-left-radius: 25px;
+    }
+
+    .button{
+      margin-left: -20px;
+      width: 45px;
+      height: 40px;
+      border-top-right-radius: 25px;
+      border-bottom-right-radius: 25px;
+    }
