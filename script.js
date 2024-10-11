@@ -9,26 +9,26 @@
 //  ball.style.top = `${x - ball.offsetHeight / 2}px`;
 // })
 
-// const pool = document.getElementById('pool');
-// const ball = document.getElementById('ball');
+const pool = document.getElementById('pool');
+const ball = document.getElementById('ball');
 
-// pool.addEventListener('click', function(event) {
+pool.addEventListener('click', function(event) {
 
-//     const poolRect = pool.getBoundingClientRect();
-//     const ballRect = ball.getBoundingClientRect();
-//     const clickX = event.clientX - poolRect.left;
-//     const clickY = event.clientY - poolRect.top;
-//     const minX = ballRect.width / 2;
-//     const minY = ballRect.height / 2;
-//     const maxX = poolRect.width - ballRect.width / 2;
-//     const maxY = poolRect.height - ballRect.height / 2;
+    const poolRect = pool.getBoundingClientRect();
+    const ballRect = ball.getBoundingClientRect();
+    const clickX = event.clientX - poolRect.left;
+    const clickY = event.clientY - poolRect.top;
+    const minX = ballRect.width / 2;
+    const minY = ballRect.height / 2;
+    const maxX = poolRect.width - ballRect.width / 2;
+    const maxY = poolRect.height - ballRect.height / 2;
 
-//     const newX = Math.max(minX, Math.min(clickX, maxX));
-//     const newY = Math.max(minY, Math.min(clickY, maxY));
+    const newX = Math.max(minX, Math.min(clickX, maxX));
+    const newY = Math.max(minY, Math.min(clickY, maxY));
 
-//     ball.style.left = `${newX - ballRect.width / 2}px`;
-//     ball.style.top = `${newY - ballRect.height / 2}px`;
-// });
+    ball.style.left = `${newX - ballRect.width / 2}px`;
+    ball.style.top = `${newY - ballRect.height / 2}px`;
+});
 
 // const dino = document.querySelector('.dino');
 // const player = document.querySelector('.dino-player');
@@ -157,37 +157,7 @@
 
 
 
-// const n1 = parseInt(document.getElementById("n1").value);
-// const n2 = parseInt(document.getElementById("n2").value);
 
-// const plus = document.getElementById("add");
-// const minus = document.getElementById("remove");
-// const molt = document.getElementById("moltiplicate");
-// const divi = document.getElementById("divis");
-
-// const result = document.getElementById("result");
-
-// plus.addEventListener('click', () => {
-//   if(n1 !== NaN && n2 !== NaN){
-//   result.textContent = `${n1 + n2}`;
-//   }
-// });
-
-// minus.addEventListener('click', () => {
-//    result.textContent = `${n1 - n2}`;
-//  });
-
-//  molt.addEventListener('click', () => {
-//    result.textContent = `${n1 * n2}`;
-//  });
-
-//  divi.addEventListener('click', () => {
-//    if(n2 === 0) {
-//       alert('Неможливо виконати дію!');
-//    } else {
-//       result.textContent = `${n1 / n2}`;
-//    }
-//  });
 
 
 
@@ -265,24 +235,24 @@ divi.addEventListener('click', () => {
 
 
 
-// const birthYearInput = document.getElementById("birthYear");
-// const checkButton = document.getElementById("checkButton");
-// const resultElement = document.getElementById("result");
+const birthYearInput = document.getElementById("birthYear");
+const checkButton = document.getElementById("checkButton");
+const resultElement = document.getElementById("result");
 
-// checkButton.addEventListener("click", function() {
+checkButton.addEventListener("click", function() {
 
-//     const year = parseInt(birthYearInput.value);
+    const year = parseInt(birthYearInput.value);
 
-//     let isLeapYear;
-//     if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
-//         isLeapYear = true;
-//     } else {
-//         isLeapYear = false;
-//     }
+    let isLeapYear;
+    if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
+        isLeapYear = true;
+    } else {
+        isLeapYear = false;
+    }
 
-//     if (isLeapYear) {
-//         resultElement.innerHTML = `Рік ${year} був високосним.`;
-//     } else {
-//         resultElement.innerHTML = `Рік ${year} не був високосним.`;
-//     }
-// });
+    if (isLeapYear) {
+        resultElement.innerHTML = `Рік ${year} був високосним.`;
+    } else {
+        resultElement.innerHTML = `Рік ${year} не був високосним.`;
+    }
+});
